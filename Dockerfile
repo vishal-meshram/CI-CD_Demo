@@ -1,8 +1,7 @@
 FROM python:3.9
 WORKDIR /app 
-RUN . /app 
-
-COPY requirements.txt ./requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 RUN pip3 install -r requirements.txt # install dependencies in requirements.txt
+COPY . /app 
 EXPOSE 5000
-CMD ["python", "app.py"] 
+CMD ["python", "./app.py"] 
