@@ -4,6 +4,6 @@ RUN . /app
 
 COPY requirements.txt ./requirements.txt
 RUN pip3 install -r requirements.txt # install dependencies in requirements.txt
-EXPOSE $80
+EXPOSE 5000
 #RUN chmod a+x *.py
 CMD ["python", "app.py"] # define the command to start the container
