@@ -5,5 +5,4 @@ RUN . /app
 COPY requirements.txt ./requirements.txt
 RUN pip3 install -r requirements.txt # install dependencies in requirements.txt
 EXPOSE 5000
-#RUN chmod a+x *.py
-CMD ["python", "app.py"] # define the command to start the container
+CMD ["python", "./app/app.py"] # define the command to run the app.py which is in ./app/ folder
