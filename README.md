@@ -1,0 +1,1 @@
+This is a sample code using Linear Regression model on Boston Housing Dataset used to test deployment of code on AWS cloud and CI/CD pipeline using github action.
